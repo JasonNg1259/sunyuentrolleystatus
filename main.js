@@ -35,28 +35,4 @@ setInterval(()=>{
         }
     }
     xhr.send();
-
-    let xhr2 = new XMLHttpRequest(); //creating XML Object
-    xhr2.open("GET","php/index2.php",true);
-    xhr2.onload = ()=>{
-        if(xhr2.readyState === XMLHttpRequest.DONE){
-            if(xhr2.status === 200){
-                let data2 = xhr2.response;
-                vulcanize_list.innerHTML = data2;
-            }
-        }
-    }
-    xhr2.send();
-
-    let xhr3 = new XMLHttpRequest(); //creating XML Object
-    xhr3.open("GET","php/index3.php",true);
-    xhr3.onload = ()=>{
-        if(xhr3.readyState === XMLHttpRequest.DONE){
-            if(xhr3.status === 200){
-                let data3 = xhr3.response;
-                splicing_list.innerHTML = data3;
-            }
-        }
-    }
-    xhr3.send();
 }, 1000); //this function will run frequently after 500ms
