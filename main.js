@@ -59,4 +59,4 @@ setInterval(()=>{
         }
     }
     xhr3.send();
-}, 500); //this function will run frequently after 500ms
+}, 1000); //this function will run frequently after 500ms
